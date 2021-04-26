@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Numero</th>
+        <th scope="col">Trazabilidad</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Servicio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of logs">
+        <td>{{log.idTransaccionUsuario}}</td>
+        <td>{{log.resultado}}</td>
+        <td>{{log.fecha}}</td>
+        <td>{{log.servicio}}</td>
+      </tr>
+    </tbody>
+  </table>

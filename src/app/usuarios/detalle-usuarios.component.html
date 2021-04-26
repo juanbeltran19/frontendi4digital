@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Identificaci&oacuten Usuario</th>
+        <th scope="col">Id Publicaci&oacuten</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Mensaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let publicacion of publicaciones">
+        <td>{{publicacion.userId}}</td>
+        <td>{{publicacion.id}}</td>
+        <td>{{publicacion.title}}</td>
+        <td>{{publicacion.body}}</td>
+      </tr>
+    </tbody>
+  </table>

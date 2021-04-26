@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Nombre Usuario</th>
+      <th scope="col">Email</th>
+      <th scope="col">Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{usuario.id}}</td>
+      <td>{{usuario.name}}</td>
+      <td>{{usuario.username}}</td>
+      <td>{{usuario.email}}</td>
+      <td> <button routerLink="/detalle/{{usuario.id}}">Publicaciones</button>   
+           <button routerLink="/verfotos/{{usuario.id}}">Fotos</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
